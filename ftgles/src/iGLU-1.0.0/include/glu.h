@@ -31,7 +31,11 @@
 #ifndef __glu_h__
 #define __glu_h__
 
+#ifdef __linux__
+#include <GLES/gl.h>
+#else
 #include <OpenGLES/ES1/gl.h>
+#endif
 
 #ifndef GLAPIENTRY
 #define GLAPIENTRY

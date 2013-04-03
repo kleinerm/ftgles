@@ -25,8 +25,13 @@
 #ifndef FTGL_ES_GLUE_H
 #define FTGL_ES_GLUE_H
 
+#ifdef __linux__
+#include <GLES/gl.h>
+#include <GLES/glext.h>
+#else 
 #include <OpenGLES/ES1/gl.h>
 #include <OpenGLES/ES1/glext.h>
+#endif
 
 #include <stdio.h>
 #include <assert.h>

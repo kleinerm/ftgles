@@ -30,7 +30,13 @@
 
 #include "gluos.h"
 #include <math.h>
+
+#ifdef __linux__
+#include <GLES/gl.h>
+#else
 #include <OpenGLES/ES1/gl.h>
+#endif
+
 #include "glu.h"
 #include "gluint.h"
 
