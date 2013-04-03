@@ -207,7 +207,7 @@ GLuint FTTextureFontImpl::CreateTexture()
     glTexImage2D(GL_TEXTURE_2D, 0, GL_ALPHA, textureWidth, textureHeight,
                  0, GL_ALPHA, GL_UNSIGNED_BYTE, textureMemory);
 	
-	printf("texture dimensions: %d %d\n", textureWidth, textureHeight);
+	//printf("texture dimensions: %d %d\n", textureWidth, textureHeight);
 	
     delete [] textureMemory;
 
